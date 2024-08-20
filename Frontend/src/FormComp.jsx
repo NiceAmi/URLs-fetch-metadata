@@ -33,7 +33,7 @@ export const FormComp = () => {
         setError('');
 
         try {
-            const response = await axios.post('https://urls-fetch-metadata-8ac0d9e301f8.herokuapp.com/api/fetch-metadata', { urls: filteredUrls });
+           const response = await axios.post('https://urls-fetch-metadata-e2eb70b8fa3a.herokuapp.com/api/fetch-metadata', { urls: filteredUrls });
             setMetaData(response.data);
         } catch (error) {
             setError('Failed to fetch data. Please try different URLs.');
